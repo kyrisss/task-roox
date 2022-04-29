@@ -1,0 +1,58 @@
+@import '../../variable.scss';
+
+.users {
+    flex: 1 0;
+    padding: 20px 60px 25px 30px;
+
+    .users__title {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 16px;
+
+    }
+
+    .users-list {
+        margin-bottom: 10px;
+
+
+        .user {
+            background-color: $bg-user;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 24px;
+            font-size: 11px;
+            line-height: 13px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+
+            .user__value {
+
+                margin-bottom: 8px;
+
+                .user__title {
+                    color: $color-user-title;
+                    font-weight: 400;
+                }
+            }
+
+            .user__value:last-child {
+                margin-bottom: 0;
+            }
+
+            .user__more {
+                font-size: 12px;
+                line-height: 14px;
+                color: $color-blue;
+                align-self: flex-end;
+                text-decoration: none;
+                font-weight: 400;
+            }
+
+        }
+    }
+
+    .users__total {
+        text-align: right;
+    }
+}
