@@ -1,0 +1,26 @@
+.button {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 5px 15px;
+    background-color: $color-blue;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.button:hover{
+    transform: scale(1.2);
+}
+
+.button_submit{
+    background-color: $bg-submit;
+}
+
+.button_disabled{
+    background-color: $bg-diabled;
+    cursor: default;
+
+}
+.button_disabled:hover{
+    transform: none;
+}
