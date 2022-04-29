@@ -1,0 +1,70 @@
+// @import '../Button/buttons.scss';
+// @import '../../variable.scss';
+
+.profile-container {
+
+    flex: 1 0;
+    padding: 15px 40px 100px 35px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .form__container {
+            border: 1px solid #F3F3F3;
+            border-radius: 8px;
+            padding: 20px 6px 19px 12px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .form__control {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+
+                label {
+                    font-size: 8px;
+                    line-height: 9px;
+                }
+
+                input {
+                    max-width: 221px;
+                    padding: 5px 10px;
+                    font-size: 10px;
+                    line-height: 12px;
+                    border: 1px solid #D8D8D8;
+                    border-radius: 5px;
+                }
+                textarea{
+                    max-width: 100%;
+                    height: 55px;
+                    padding: 5px 10px;
+                    font-size: 10px;
+                    line-height: 12px;
+                    border: 1px solid #D8D8D8;
+                    border-radius: 5px;
+                }
+
+                .form__error{
+                    border: 1px solid red;
+                    outline-color: red;
+                }
+
+            }
+        }
+
+        .form__button{
+            display: block;
+            align-self: flex-end;
+        }
+    }
+}
