@@ -1,0 +1,16 @@
+@import '../../variable.scss';
+@import '../Button/buttons.scss';
+
+.aside {
+    flex: 0 0 152px;
+    background-color: $bg-aside;
+
+    .aside__container {
+        max-width: 106px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 35px auto 0
+    }
+}
+
