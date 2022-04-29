@@ -1,0 +1,13 @@
+@import './variable.scss';
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  width: 665px;
+  margin: 0 auto;
+  display: flex;
+}
