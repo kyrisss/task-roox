@@ -7,7 +7,6 @@ import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import Profile from './Profile';
 import Preloader from '../Preloader/Preloader';
-import ProfileEdit from './ProfileEdit';
 
 interface PropsType {
     user: UserType | undefined
@@ -39,9 +38,9 @@ const ProfileContainer: React.FC<PropsType> = (props) => {
                     <div className="main__profile-container profile-container">
                         <div className="profile-container__header header">
                             <h5 className="header__title">Профиль пользователя</h5>
-                            <button className='header__button button' onClick={changeEditMode}>Редактировать</button>
+                            <button className={`header__button button ${props.editMode ? 'button_disabled' : ''}`} onClick={changeEditMode}>Редактировать</button>
                         </div>
-                        {props.editMode ? <ProfileEdit user={props.user} comment={props.comment} setEditUser={props.SET_EDIT_USER} setEditMode={props.SET_EDIT_MODE}></ProfileEdit> : <Profile user={props.user} comment={props.comment}></Profile>}
+                        <Profile user={props.user} comment={props.comment} setEditUser={props.SET_EDIT_USER} setEditMode={props.SET_EDIT_MODE} editMode={props.editMode}></Profile>
                     </div>
             }
         </>
